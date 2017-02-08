@@ -1,0 +1,430 @@
+/* General
+========================================================================== */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+.align-right {
+	float: right;
+}
+
+.align-left {
+	float: left;
+}
+
+.row {
+	display: -webkit-box;			/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;				/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;			/* TWEENER - IE 10 */
+	display: -webkit-flex;		/* NEW - Chrome */
+	display: flex;						/* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.border {
+	position: relative;
+	padding: 10px 0 0 20px;
+}
+
+.border:before, .border:after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	
+}
+
+.border:before {
+	bottom: -3px;
+	width: 3px;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#034166), to(transparent));
+	background-image: -webkit-linear-gradient(#034166, transparent);
+	background-image: -moz-linear-gradient(#034166, transparent);
+	background-image: -o-linear-gradient(#034166, transparent);
+}
+
+.border:after {
+	right: -3px;
+	height: 3px;
+	background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#034166), to(transparent));
+	background-image: -webkit-linear-gradient(left, #034166, transparent);
+	background-image: -moz-linear-gradient(left, #034166, transparent);
+	background-image: -o-linear-gradient(left, #034166, transparent);
+}
+
+.fa {
+	display: block;
+}
+
+.desktop {
+	display: none;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+/* Fonts
+========================================================================== */
+@font-face {
+	font-family: sakkal-majalla-bold;
+	src: url('../fonts/sakkal-majalla-bold.ttf');
+}
+
+body, input, textarea {
+	font-family: sakkal-majalla-bold, Arial, sans-serif;
+}
+
+h1, h2, p, label {
+	color: #FFF;
+}
+
+h1 {
+	display: inline-block;
+	margin: 6px 0 0 20px;
+	font-size: 3rem;
+	text-shadow: 0 0 8px #000;
+	vertical-align: top;
+}
+
+h2 {
+	margin: 20px auto 10px;
+	font-size: 2rem;
+	text-align: center;
+}
+
+p, label, .g-recaptcha, input[type='submit'] {
+	margin: 0 0 16px;
+	font-size: 1.4rem;
+}
+
+/* Navigation
+========================================================================== */
+footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 60px;
+	width: 100%;
+	background: #000;
+}
+
+ul {
+	padding-top: 8px;
+	height: 100%;
+}
+
+ul li {
+	display: inline-block;
+	flex-grow: 1;
+	height: 100%;
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+ul li a {
+	color: #888;
+	-webkit-transition: color 0.4s;
+	-moz-transition: color 0.4s;
+	-o-transition: color 0.4s;
+	transition: color 0.4s;
+}
+
+ul li a.active {
+	color: #578099;
+}
+
+ul li a:hover {
+	color: #FFF;
+}
+
+.fa {
+	display: block;
+}
+
+/* Home
+========================================================================== */
+header {
+	padding-top: 20px;
+	width: 100%;
+	text-align: center;
+	z-index: 200;
+}
+
+section.home header {
+	position: absolute;
+}
+
+.owl-carousel .owl-slide img {
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	padding-bottom: 64px;
+	object-fit: cover;
+}
+
+#bar {
+	width: 0%;
+	max-width: 100%;
+	height: 4px;
+	background: #034166;
+}
+
+#progressBar {
+	position: absolute;
+	bottom: 60px;
+	width: 100%;
+	height: 4px;
+}
+
+.owl-theme .owl-controls {
+	position: absolute;
+	margin-top: -100px;
+	width: 100%;
+}
+
+.owl-theme .owl-controls .owl-page span {
+	opacity: 0.4;
+	background: #FFF;
+}
+
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+	opacity: 0.8;
+}
+
+/* Videos / Photos
+========================================================================== */
+.videos {
+	margin: auto;
+}
+
+#gallery {
+	padding-top: 8px;
+	padding-bottom: 68px;
+}
+
+/* Contact
+========================================================================== */
+html.contact body {
+	background: #000 url('../images/contact.jpg') no-repeat;
+	background-size: cover;
+}
+
+section.container-contact {
+	padding: 0 10px 60px 10px;
+}
+
+section.container-contact h1 {
+	text-shadow: none;
+}
+
+.social-media {
+	margin-bottom: 16px;
+}
+
+.social-media ul li {
+	width: 100px;
+}
+
+.social-media ul li:nth-child(-n + 3) {
+	margin-bottom: 10px;
+}
+
+.social-media ul li a {
+	color: #FFF;
+}
+
+label, input {
+	display: block;
+}
+
+input, textarea {
+	padding-left: 6px;
+	width: 100%;
+}
+
+input[type='checkbox'] {
+	display: inline-block;
+	width: 20px;
+}
+
+.message {
+	margin-bottom: 8px;
+}
+
+textarea {
+	height: 100px;
+}
+
+input[type='submit'] {
+	padding: 10px 0 10px 0;
+	background-color: transparent;
+	color: white;
+	border: 1px solid #FFF;
+	cursor: pointer;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+input[type='submit']:hover {
+	color: #034166;
+	border: 1px solid #034166;
+}
+
+/* 404 & Thank You
+========================================================================== */
+.extra {
+	height: 100%;
+}
+
+.container-content-extra h1 {
+	margin: 40px 0 0 0;
+	width: 100%;
+	text-align: center;
+}
+
+.container-content-extra h2 {
+	margin-top: 0;
+	max-width: 600px;
+}
+
+/* Media Queries
+========================================================================== */
+/*Medium screens: min-width 641px, medium screens*/
+@media only screen and (min-width: 40.063em) {
+	section.container-contact {
+		padding: 0 20px 60px 20px;
+	}
+
+	.social-media ul li:nth-child(-n + 3) {
+		margin-bottom: 0;
+	}
+
+	.row-medium {
+		display: -webkit-box;			/* OLD - iOS 6-, Safari 3.1-6 */
+		display: -moz-box;				/* OLD - Firefox 19- (buggy but mostly works) */
+		display: -ms-flexbox;			/* TWEENER - IE 10 */
+		display: -webkit-flex;		/* NEW - Chrome */
+		display: flex;						/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	}
+
+	.row-medium .columns {
+		flex-grow: 1;
+	}
+
+	.row-medium .columns:first-child {
+		padding-right: 10px;
+	}
+
+	.row-medium .columns:last-child {
+		padding-left: 10px;
+	}
+}
+
+/*Large screens: min-width 1025px, large screens*/
+@media only screen and (min-width: 64.063em) {
+	html, body, section {
+		height: 100%;
+	}
+
+	.mobile, .container-social-media {
+		display: none;
+	}
+
+	.desktop {
+		display: block;
+	}
+
+	header.desktop {
+		position: fixed;
+		padding-top: 16px;
+		height: 100px;
+		background-color: #000;
+	}
+
+	header.desktop .container-header, footer.desktop ul, section.container-contact {
+		margin: auto;
+		max-width: 1200px;
+	}
+
+	.container-header .logo {
+		margin-left: 20px;
+	}
+
+	.container-header ul {
+		padding-top: 10px;
+		width: 400px;
+	}
+
+	.owl-carousel .owl-slide img, section.container-gallery {
+		padding-top: 100px;
+	}
+
+	.ug-textpanel-title.ug-trans-enabled {
+		font-size: 24px !important;
+	}
+
+	section.container-gallery {
+		padding-bottom: 60px;
+	}
+
+	#gallery {
+		padding-bottom: 8px;
+	}
+
+	section.container-contact {
+		padding-top: 140px;
+	}
+
+	.row-large {
+		display: -webkit-box;			/* OLD - iOS 6-, Safari 3.1-6 */
+		display: -moz-box;				/* OLD - Firefox 19- (buggy but mostly works) */
+		display: -ms-flexbox;			/* TWEENER - IE 10 */
+		display: -webkit-flex;		/* NEW - Chrome */
+		display: flex;						/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	}
+
+	.row-large .columns {
+		width: 50%;
+	}
+
+	.row-large .columns:first-child {
+		padding-right: 10px;
+	}
+
+	.row-large .columns:last-child {
+		padding-left: 10px;
+	}
+}
+
+/*XLarge screens: min-width 1441px, xlarge screens*/
+@media only screen and (min-width: 90.063em) {
+
+}
+
+/*XXLarge screens: min-width 1921px, xxlarge screens*/
+@media only screen and (min-width: 120.063em) {
+
+}
