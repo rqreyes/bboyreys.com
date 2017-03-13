@@ -6,7 +6,7 @@
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 		<title><?php echo $pageTitle; ?></title>
-		<meta name='description' content='I’m a front-end web developer by day, breakdance warrior by night, and this is my dance portfolio. I live in San Diego, enjoy puzzles, and have a weakness for ramen.'>
+		<meta name='description' content='I’m a front-end web developer by day, breaking (breakdance) warrior by night, and this is my dance portfolio. I live in San Diego, enjoy puzzles, and have a weakness for ramen.'>
 		<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'>
 		<link rel='icon' href='images/favicon.ico' type='image/x-icon'>
 		<link rel='stylesheet' href='https://necolas.github.io/normalize.css/5.0.0/normalize.css'>
