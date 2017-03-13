@@ -82,7 +82,7 @@
 				<div class='columns'>
 					<h2>A Little About Me</h2>
 					<div class='border'>
-						<p>I’m a front-end web developer by day, breakdance warrior by night, and this is my dance portfolio. I live in San Diego, enjoy puzzles, and have a weakness for ramen.</p>
+						<p>I’m a front-end web developer by day, breaking (breakdance) warrior by night, and this is my dance portfolio. I live in San Diego, enjoy puzzles, and have a weakness for ramen.</p>
 						<p>Drop a hello! If you want to hire me for a private lesson, workshop, or an event, please provide details such as date, time, and location.</p>
 					</div>
 					<div class='container-social-media'>
