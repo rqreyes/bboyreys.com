@@ -1,0 +1,50 @@
+.align {
+	&-right {
+		float: right;
+	}
+
+	&-left {
+		float: left;
+	}
+}
+
+.row {
+	display: -webkit-box;			/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;				/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;			/* TWEENER - IE 10 */
+	display: -webkit-flex;		/* NEW - Chrome */
+	display: flex;						/* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.border {
+	position: relative;
+	padding: 10px 0 0 20px;
+}
+
+.border:before, .border:after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	
+}
+
+.border:before {
+	bottom: -3px;
+	width: 3px;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from($color-primary), to(transparent));
+	@include border-grad-before($color-primary, transparent);
+}
+
+.border:after {
+	right: -3px;
+	height: 3px;
+	background-image: -webkit-gradient(linear, 0 0, 100% 0, from($color-primary), to(transparent));
+	@include border-grad-after($color-primary, transparent);
+}
+
+/* 404 & Thank You
+========================================================================== */
+.extra {
+	height: 100%;
+}

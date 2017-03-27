@@ -1,0 +1,42 @@
+@font-face {
+	font-family: sakkal-majalla-bold;
+	src: url('../fonts/sakkal-majalla-bold.ttf');
+}
+
+body, input, textarea {
+	font-family: sakkal-majalla-bold, Arial, sans-serif;
+}
+
+h1, h2, p, label {
+	color: $white;
+}
+
+h1 {
+	display: inline-block;
+	margin: 6px 0 0 20px;
+	font-size: 3rem;
+	text-shadow: 0 0 8px #000;
+	vertical-align: top;
+}
+
+h2 {
+	margin: 20px auto 10px;
+	font-size: 2rem;
+	text-align: center;
+}
+
+p, label, .g-recaptcha, input[type='submit'] {
+	margin: 0 0 16px;
+	font-size: 1.4rem;
+}
+
+.container-content-extra h1 {
+	margin: 40px 0 0 0;
+	width: 100%;
+	text-align: center;
+}
+
+.container-content-extra h2 {
+	margin-top: 0;
+	max-width: 600px;
+}

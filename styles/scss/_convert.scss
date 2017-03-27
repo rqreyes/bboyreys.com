@@ -1,0 +1,230 @@
+/* General
+========================================================================== */
+.fa {
+	display: block;
+}
+
+.desktop {
+	display: none;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+/* Home
+========================================================================== */
+header {
+	padding-top: 20px;
+	width: 100%;
+	text-align: center;
+	z-index: 200;
+}
+
+section.home header {
+	position: absolute;
+}
+
+/* Videos / Photos
+========================================================================== */
+.videos {
+	margin: auto;
+}
+
+#gallery {
+	padding-top: 8px;
+	padding-bottom: 68px;
+}
+
+/* Contact
+========================================================================== */
+html.contact body {
+	background: $black url('../images/contact.jpg') no-repeat;
+	background-size: cover;
+}
+
+section.container-contact {
+	padding: 0 10px 60px 10px;
+}
+
+section.container-contact h1 {
+	text-shadow: none;
+}
+
+.social-media {
+	margin-bottom: 16px;
+}
+
+.social-media ul li {
+	width: 100px;
+}
+
+.social-media ul li:nth-child(-n + 3) {
+	margin-bottom: 10px;
+}
+
+.social-media ul li a {
+	color: $white;
+}
+
+label, input {
+	display: block;
+}
+
+input, textarea {
+	padding-left: 6px;
+	width: 100%;
+}
+
+input[type='checkbox'] {
+	display: inline-block;
+	width: 20px;
+}
+
+.message {
+	margin-bottom: 8px;
+}
+
+textarea {
+	height: 100px;
+}
+
+input[type='submit'] {
+	padding: 10px 0 10px 0;
+	background-color: transparent;
+	color: $white;
+	border: 1px solid $white;
+	cursor: pointer;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+input[type='submit']:hover {
+	color: $color-primary;
+	border: 1px solid $color-primary;
+}
+
+/* Media Queries
+========================================================================== */
+/*Medium screens: min-width 641px, medium screens*/
+@media only screen and (min-width: 40.063em) {
+	section.container-contact {
+		padding: 0 20px 60px 20px;
+	}
+
+	.social-media ul li:nth-child(-n + 3) {
+		margin-bottom: 0;
+	}
+
+	.row-medium {
+		display: -webkit-box;			/* OLD - iOS 6-, Safari 3.1-6 */
+		display: -moz-box;				/* OLD - Firefox 19- (buggy but mostly works) */
+		display: -ms-flexbox;			/* TWEENER - IE 10 */
+		display: -webkit-flex;		/* NEW - Chrome */
+		display: flex;						/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	}
+
+	.row-medium .columns {
+		flex-grow: 1;
+	}
+
+	.row-medium .columns:first-child {
+		padding-right: 10px;
+	}
+
+	.row-medium .columns:last-child {
+		padding-left: 10px;
+	}
+}
+
+/*Large screens: min-width 1025px, large screens*/
+@media only screen and (min-width: 64.063em) {
+	html, body, section {
+		height: 100%;
+	}
+
+	.mobile, .container-social-media {
+		display: none;
+	}
+
+	.desktop {
+		display: block;
+	}
+
+	header.desktop {
+		position: fixed;
+		padding-top: 16px;
+		height: 100px;
+		background-color: $black;
+	}
+
+	header.desktop .container-header, footer.desktop ul, section.container-contact {
+		margin: auto;
+		max-width: 1200px;
+	}
+
+	.container-header .logo {
+		margin-left: 20px;
+	}
+
+	.container-header ul {
+		padding-top: 10px;
+		width: 400px;
+	}
+
+	.owl-carousel .owl-slide img, section.container-gallery {
+		padding-top: 100px;
+	}
+
+	.ug-textpanel-title.ug-trans-enabled {
+		font-size: 24px !important;
+	}
+
+	section.container-gallery {
+		padding-bottom: 60px;
+	}
+
+	#gallery {
+		padding-bottom: 8px;
+	}
+
+	section.container-contact {
+		padding-top: 140px;
+	}
+
+	.row-large {
+		display: -webkit-box;			/* OLD - iOS 6-, Safari 3.1-6 */
+		display: -moz-box;				/* OLD - Firefox 19- (buggy but mostly works) */
+		display: -ms-flexbox;			/* TWEENER - IE 10 */
+		display: -webkit-flex;		/* NEW - Chrome */
+		display: flex;						/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	}
+
+	.row-large .columns {
+		width: 50%;
+	}
+
+	.row-large .columns:first-child {
+		padding-right: 10px;
+	}
+
+	.row-large .columns:last-child {
+		padding-left: 10px;
+	}
+}
+
+/*XLarge screens: min-width 1441px, xlarge screens*/
+@media only screen and (min-width: 90.063em) {
+
+}
+
+/*XXLarge screens: min-width 1921px, xxlarge screens*/
+@media only screen and (min-width: 120.063em) {
+
+}
