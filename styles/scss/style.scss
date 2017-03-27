@@ -1,6 +1,7 @@
-@import 'convert';
-
+@import 'modules/variables';
 @import 'modules/colors';
+
+@import 'convert';
 
 @import 'partials/base';
 @import 'partials/grids';
@@ -9,4 +10,4 @@
 
 @import 'partials/nav';
 
-@import 'vendor/owl-carousel';
+@import 'vendors/owl-carousel';

@@ -4,7 +4,7 @@ footer {
 	bottom: 0px;
 	height: 60px;
 	width: 100%;
-	background: #000;
+	background: $black;
 }
 
 ul {
@@ -21,18 +21,18 @@ ul li {
 }
 
 ul li a {
-	color: #888;
+	color: $gray;
 	-webkit-transition: color 0.4s;
 	-moz-transition: color 0.4s;
 	-o-transition: color 0.4s;
 	transition: color 0.4s;
 	&:hover {
-		color: #FFF;
+		color: $white;
 	}
 }
 
 ul li a.active {
-	color: #578099;
+	color: $color-secondary;
 }
 
 .fa {

@@ -1,31 +1,5 @@
 /* General
 ========================================================================== */
-.border {
-  position: relative;
-  padding: 10px 0 0 20px; }
-
-.border:before, .border:after {
-  content: '';
-  position: absolute;
-  top: -3px;
-  left: -3px; }
-
-.border:before {
-  bottom: -3px;
-  width: 3px;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#034166), to(transparent));
-  background-image: -webkit-linear-gradient(#034166, transparent);
-  background-image: -moz-linear-gradient(#034166, transparent);
-  background-image: -o-linear-gradient(#034166, transparent); }
-
-.border:after {
-  right: -3px;
-  height: 3px;
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#034166), to(transparent));
-  background-image: -webkit-linear-gradient(left, #034166, transparent);
-  background-image: -moz-linear-gradient(left, #034166, transparent);
-  background-image: -o-linear-gradient(left, #034166, transparent); }
-
 .fa {
   display: block; }
 
@@ -102,7 +76,7 @@ textarea {
 input[type='submit'] {
   padding: 10px 0 10px 0;
   background-color: transparent;
-  color: white;
+  color: #FFF;
   border: 1px solid #FFF;
   cursor: pointer;
   -webkit-transition: all 0.4s;
@@ -241,6 +215,32 @@ ul li {
   /* NEW - Chrome */
   display: flex;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
+
+.border {
+  position: relative;
+  padding: 10px 0 0 20px; }
+
+.border:before, .border:after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px; }
+
+.border:before {
+  bottom: -3px;
+  width: 3px;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#034166), to(transparent));
+  background-image: -webkit-linear-gradient(#034166, transparent);
+  background-image: -moz-linear-gradient(#034166, transparent);
+  background-image: -o-linear-gradient(#034166, transparent); }
+
+.border:after {
+  right: -3px;
+  height: 3px;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#034166), to(transparent));
+  background-image: -webkit-linear-gradient(left, #034166, transparent);
+  background-image: -moz-linear-gradient(left, #034166, transparent);
+  background-image: -o-linear-gradient(left, #034166, transparent); }
 
 /* 404 & Thank You
 ========================================================================== */

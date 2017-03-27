@@ -10,7 +10,7 @@
 	width: 0%;
 	max-width: 100%;
 	height: 4px;
-	background: #034166;
+	background: $color-primary;
 }
 
 #progressBar {
@@ -28,7 +28,7 @@
 
 .owl-theme .owl-controls .owl-page span {
 	opacity: 0.4;
-	background: #FFF;
+	background: $white;
 }
 
 .owl-theme .owl-controls .owl-page.active span,

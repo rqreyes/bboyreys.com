@@ -1,0 +1,12 @@
+// Mixins
+@mixin border-grad-before($color-stop-1, $color-stop-2) {
+	background-image: -webkit-linear-gradient($color-stop-1, $color-stop-2);
+	background-image: -moz-linear-gradient($color-stop-1, $color-stop-2);
+	background-image: -o-linear-gradient($color-stop-1, $color-stop-2);
+}
+
+@mixin border-grad-after($color-stop-1, $color-stop-2) {
+	background-image: -webkit-linear-gradient(left, $color-stop-1, $color-stop-2);
+	background-image: -moz-linear-gradient(left, $color-stop-1, $color-stop-2);
+	background-image: -o-linear-gradient(left, $color-stop-1, $color-stop-2);
+}
