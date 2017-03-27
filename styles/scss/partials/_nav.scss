@@ -1,0 +1,40 @@
+footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 60px;
+	width: 100%;
+	background: #000;
+}
+
+ul {
+	padding-top: 8px;
+	height: 100%;
+}
+
+ul li {
+	display: inline-block;
+	flex-grow: 1;
+	height: 100%;
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+ul li a {
+	color: #888;
+	-webkit-transition: color 0.4s;
+	-moz-transition: color 0.4s;
+	-o-transition: color 0.4s;
+	transition: color 0.4s;
+	&:hover {
+		color: #FFF;
+	}
+}
+
+ul li a.active {
+	color: #578099;
+}
+
+.fa {
+	display: block;
+}

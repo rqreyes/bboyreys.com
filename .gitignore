@@ -47,7 +47,7 @@ Thumbs.db
 
 # Custom #
 ###################
-.ftpquota
+.sass-cache
 x-backups/
 x-layers/
 x-received/
