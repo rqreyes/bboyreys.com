@@ -9,13 +9,13 @@
 	include 'includes/header.php';
 ?>
 
+		<video controls poster="/images/videos-this-christmas.jpg">
+            <source src="videos/2016-christmas.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="caption">This Christmas</p>
 		<section class='container-gallery'>
 			<div class='videos' id='gallery' style='display:none;'>
-				<img alt='This Christmas'
-					data-type='youtube'
-					src='images/videos-this-christmas.jpg'
-					data-videoid='hxAE57sB6yo'>
-
 				<img alt='Thorsday'
 					data-type='youtube'
 					src='images/videos-thorsday.jpg'
